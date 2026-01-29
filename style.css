@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download-btn {
+    background: #4da3ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #2f86e5;
+}
+
+/* CONTAINER */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* BOOK WRAPPER */
+#book-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FLIPBOOK */
+#flipbook {
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
